@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <script type="text/javascript">
+            function answer(x){
+                var inputValue=document.getElementById(x).value;
+                if(inputValue=="WAD"){
+                    document.getElementById("result").innerHTML="Correct!";
+                }
+                else{
+                    document.getElementById("result").innerHTML="Incorrect. The cottect answer is WAD";
+                }
+            }
+        </script>
+    </head>
+<body>
+    <h1>Interactive quiz</h1>
+    <table>
+<tr><p>What is the short form of 'Web Application Development'</p></tr>
+<tr>
+<td><input type="text" id="question" name="pix" placeholder="Enter your answer"></td>
+<td><input type="button" onclick="answer('question')" value="submit"></td>
+</tr>
+<tr>
+    <td colspan="2"><h4 id="result"></h4></td>
+</tr>
+
+    </table>
+</body>
+</html>
